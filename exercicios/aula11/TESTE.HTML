@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronteira</title>
+    <style>
+        body {
+            font: normal 10pt Arial;
+            text-align: center;
+        }
+        div#res {
+            margin-top: 20px;
+            font: normal 13pt Arial;
+        }
+    </style>
+</head>
+    <body>
+    <h1>Passagem para a Fronteira Brasileira</h1>
+    <h3>Preencha com seus dados pessoais:</h3>
+        Nome: <input type="text" name="nick" id="nick"><br><br>
+        Idade: <input type="number" name="idad" id="idad"><br><br>
+        País: <input type="text" name="nacio" id="nacio"><br><br>
+        <input type="button" value="Verificar" onclick="verificar()">
+        <input type="button" value="Limpar" onclick="reset()">
+    <div id="res">Resultado</div>
+        <script>
+            function verificar(){
+                var nome = document.getElementById('nick').value
+                var idade = Number(document.getElementById('idad').value)
+                var pais = document.getElementById('nacio').value
+                pais = pais.toUpperCase()
+                var res = document.getElementById('res')
+                res.innerHTML = `<p>Bem-Vindo ${nome}!</p>`
+                if (idade >= 18 && pais == 'BRASIL'){
+                    res.style.color = 'green'
+                    res.innerHTML += `<p><strong>SUA PASSAGEM FOI LIBERADA!</strong></p>`
+                } else {
+                    res.style.color = 'red'
+                    res.innerHTML += `<p><strong>SUA PASSAGEM FOI BLOQUEADA!</strong></p>`
+                } 
+            }
+            function Limpar(){
+                var reset1 = document.getElementById('nick')
+                var reset2 = document.getElementById('idad')
+                var reset3 = document.getElementById('nacio')
+                var reset4 = document.getElementById('res')
+                reset1.value = '';
+                reset2.value = '';
+                reset3.value = '';
+                reset4.innerHTML = 'Resultado';
+                reset4.style.color = 'black';
+            }
+        </script>
+    </body>
+</html>

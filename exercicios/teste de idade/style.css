@@ -1,0 +1,127 @@
+body{
+    background: rgb(26, 164, 219);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width:  660px;
+    margin: auto;
+    font:normal 20pt Arial;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.521);
+    
+
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+div#res{
+    text-align: center;
+
+}
+.button{
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    /*DEIXAR COM CURVAS NAS VOLTAS*/
+    border-radius: 15px;
+    color: #383838;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+
+
+}
+.button:hover{
+    color: #fff;
+    background-color: #000000;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+.button:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+.boxano{
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    /*DEIXAR COM CURVAS NAS VOLTAS*/
+    border-radius: 15px;
+    color: #383838;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+:root{
+    --radsex-color: rgb(0, 119,255);
+}
+.radsex{
+    font-size: 45px;
+    display: grid;
+    gap: 0.8em;
+    margin-top: 300px;
+    
+   
+}
+.radsex + .radsex{
+    margin-top: 30px;
+}
+.radsex:focus-within{
+    color: var(--radsex-color)
+}
+/* CIRCULO EM VOLTA */
+input[type="radio"]{
+    appearance: none;
+    background-color: rgb(255, 255, 255);
+    margin:0px;
+    font: inherit;
+    color: rgb(0, 119,255);
+    width: 30px;
+    height: 30px;
+    border: 4.89px solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    cursor: pointer;
+}
+/* BOLINHA DO MEIO (LA ELE)*/
+input[type="radio"]::before{
+    content:"";
+    width: 18px;
+    height: 18px;
+    margin-left: +1px;
+    margin-top: 1.86px;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: 230ms transform ease-out;
+    box-shadow: inset 1em 1em var(--radsex-color);
+}
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+.masc{
+    position:relative;left:5px;
+    top:48px;
+    height:50px;
+    width:90px;
+}

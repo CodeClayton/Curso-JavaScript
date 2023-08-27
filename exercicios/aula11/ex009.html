@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEROPORTO CLEITIN</title>
+</head>
+<body>
+    <style>
+        body {
+        font: normal 10pt Arial; 
+          text-align: center;
+          background-color: darkgray;
+          transition-delay: 20ms;
+        }
+        div#rr {
+            margin-top: 50px;
+            font: normal 13pt Arial;
+        }
+        input{
+            margin-top: 25px; 
+
+        }
+    </style>
+    <h1>
+        Seja bem vindo(a) ao aeroporto
+    </h1>
+    <h3>
+        Nos diga seu nome, idade, e nacionalidade
+    </h3>
+        Nome:  <input type="text" name="a" id="nick"> <br>
+        Idade: <input type="number" name="a" id="idad"> <br>
+        País :   <input type="text" name="a" id="nacio"> <br>
+        <input type="button" value="Confirmar"onclick="confirmar()"> 
+        <input type="button" value="Limpar"onclick = "limpar()">
+<div id="res"><h3>Resultado</div>
+    <script>
+        function confirmar(){
+            var nome = window.document.getElementById('nick').value
+            var idade = (window.document.getElementById('idad')).value
+            var pais = window.document.getElementById('nacio').value
+            pais = pais.toUpperCase()
+            res.innerHTML=`<p>Bem vindo <strong>${nome}</strong></p>`
+            if(idade>=18 && pais == 'BRASIL'){
+                res.style.color ='green'
+                 res.innerHTML +=`<p><strong>SUA PASSAGEM FOI LIBERADA!</strong></p>`
+            }else{
+                res.style.color ='red'
+                 res.innerHTML +=`<p><strong>SUA PASSAGEM FOI BLOQUEADA !</strong></p>`
+            }
+            }
+        function limpar(){
+            var reset1 = document.querySelector('input#nick')
+            var reset2 = document.querySelector('input#idad')
+            var reset3 = document.querySelector('input#nacio')
+            var reset4 = document.querySelector('input#res')
+            reset1.value = '';
+            reset2.value = '';
+            reset3.value = '';
+            reset4.innerHTML = 'Resultado';
+            reset4.style.color = 'black';
+
+
+        }
+
+        
+
+    
+        
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

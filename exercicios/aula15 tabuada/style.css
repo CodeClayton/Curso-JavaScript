@@ -1,0 +1,56 @@
+body{
+    background: rgb(26, 164, 219);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.521);
+
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+.text{
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+}
+.button{
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    /*DEIXAR COM CURVAS NAS VOLTAS*/
+    border-radius: 15px;
+    color: #383838;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.button:hover{
+    color: #fff;
+    background-color: #000000;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+.button:active{
+    box-shadow: none;
+    transform: translateY(0);
+}

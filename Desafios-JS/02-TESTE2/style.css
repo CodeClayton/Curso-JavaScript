@@ -1,0 +1,15 @@
+.btn1,.btn2,.btn3{
+    width: 100px;
+    height: 80px;
+    margin-top: 25px;
+    border-radius: 20%;
+    font-size: 20px;
+}
+.btn1:hover,.btn2:hover,.btn3:hover{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    transform: translateY(+5px);
+    box-shadow: 5px 3px 2px rgba(1, 1, 202, 0.548);
+    
+}

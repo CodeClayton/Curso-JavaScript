@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div class="container">
+            <p id= 'anonc'>Ano de Nascimento:
+                <input class ='boxano' type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo :
+            <p></p>
+
+                <label class="masc"for="masc">Masculino <br></label></label><img src="img/banheiro-homem.png"
+                     alt="" style="position:relative;left:5px;top:48px" height="50px" width="90px"></label> 
+                <input class='radsexm' type="radio" name="radsex" id="mas"checked >
+                
+                <p>Feminino <img src="img/banheiro-mulher.png"
+                     alt="" style="position:relative;left:-80px;top:70px" 
+                     height="50px" width="30px"></p>
+                <div class="radsexf"></div>
+                
+                <input class='radsex' type="radio" name="radsex" id="fem">
+                <label for="fem"></label>
+
+            </p>
+            <p>
+                <input class="button" type="button" value="Verificar"onclick="verificar()">
+            </p>
+        </div>
+        <div id ="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Cleitin du saite</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

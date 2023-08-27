@@ -1,0 +1,105 @@
+body{
+    background: rgb(26, 164, 219);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.521);
+
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+.contar:hover{
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(26, 164, 219);
+    box-shadow: 0px 11px 15px rgb(26, 164, 219);
+    
+}
+.contar{
+    font-weight: bold;
+    background-color: transparent;
+    border: 4px solid #1A1A1A;
+    /*DEIXAR COM CURVAS NAS VOLTAS*/
+    border-radius: 50px;
+    color: #383838;
+    text-align: center;
+    font: inherit;
+    font-size: 20px;
+    font-weight: 80px;
+    padding: 13px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+
+
+}
+.box{
+    
+    font-size: 15px;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    /*DEIXAR COM CURVAS NAS VOLTAS*/
+    border-radius: 15px;
+    color: #383838;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: +35px;
+}
+.box1{
+    font-size: 15px;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    /*DEIXAR COM CURVAS NAS VOLTAS*/
+    border-radius: 15px;
+    color: #383838;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: +43px;
+}
+.box2{
+    font-size: 15px;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    /*DEIXAR COM CURVAS NAS VOLTAS*/
+    border-radius: 15px;
+    color: #383838;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 13px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: +27px;
+}
+
+
